@@ -137,6 +137,7 @@ nav .center .links {
   pointer-events: none;
   opacity: 0;
   top: 1rem;
+  z-index: 10;
 }
 nav .center .links.selected {
   pointer-events: all;
