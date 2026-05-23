@@ -137,9 +137,6 @@ nav .center .links a.router-link-active {
   color: var(--primary);
   text-decoration: underline var(--text);
 }
-nav .center .links a:hover {
-  color: var(--secondary);
-}
 nav .switch {
   width: 5.5rem;
   height: 2rem;
@@ -192,6 +189,9 @@ nav .switch .selected {
     border: 0 !important;
     padding: 0;
     /* font-size: 1.1rem; */
+  }
+  nav .center .links a:hover {
+    color: var(--secondary);
   }
 }
 </style>
