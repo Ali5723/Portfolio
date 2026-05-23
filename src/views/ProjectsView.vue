@@ -1,11 +1,11 @@
 <script setup>
 const props = defineProps({
-  langData: {
+  gLangData: {
     type: Object,
   },
 });
 </script>
 
 <template>
-  <main>{{ langData }}</main>
+  <main>{{ gLangData }}</main>
 </template>

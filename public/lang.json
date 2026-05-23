@@ -1,6 +1,7 @@
 {
   "en": {
-    "nav": ["Home", "About", "Skills", "Projects", "Contact"]
+    "nav": ["Home", "About", "Skills", "Projects", "Contact"],
+    "home": ["ss"]
   },
   "ar": {
     "nav": ["الشاشة الرئيسية", "من انا", "المهارات", "المشاريع", "تواصل معي"]

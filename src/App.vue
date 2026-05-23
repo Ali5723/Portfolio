@@ -67,7 +67,7 @@ onMounted(() => {
     </nav>
   </header>
 
-  <RouterView :langData="gLangData" />
+  <RouterView :g-lang-data="gLangData" />
 </template>
 
 <style scoped>
