@@ -76,12 +76,19 @@
   --cards: #121212;
   --transition: 300ms linear;
 }
+
+:root[lang="en"] {
+  font-family: Poppins, sans-serif;
+}
+:root[lang="ar"] {
+  font-family: Mada, sans-serif;
+  /* direction: rtl; */
+}
 /* End Root */
 
 /* Start Body */
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: Poppins, sans-serif;
 }
 /* End Body */
