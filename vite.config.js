@@ -21,6 +21,6 @@ export default defineConfig(({ command, mode }) => {
       host: true,
       port: 5173,
     },
-    base: isProd ? "/portfolio/" : "/",
+    base: isProd ? "/Portfolio/" : "/",
   };
 });

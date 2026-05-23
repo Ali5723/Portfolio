@@ -1,0 +1,87 @@
+/* Start FontFace */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Sora;
+  src: url("/fonts/Sora/static/Sora-SemiBold.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Sora;
+  src: url("/fonts/Sora/static/Sora-Bold.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Medium.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Mada;
+  src: url("/fonts/Mada/static/Mada-Regular.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Mada;
+  src: url("/fonts/Mada/static/Mada-Bold.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+/* End FontFace */
+
+/* Start Root */
+:root {
+  --bg: #070707;
+  --primary: #ff3b3b;
+  --secondary: #ff6b35;
+  --text: #f1f1f1;
+  --cards: #121212;
+  --transition: 300ms linear;
+}
+/* End Root */
+
+/* Start Body */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Poppins, sans-serif;
+}
+/* End Body */
