@@ -1,5 +1,11 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  langData: {
+    type: Object,
+  },
+});
+</script>
 
 <template>
-  <main></main>
+  <main>{{ langData }}</main>
 </template>

@@ -197,7 +197,7 @@ nav .switch .selected {
 }
 @media (min-width: 500px) {
   nav {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   nav .center .menu {
     display: none;
@@ -223,6 +223,9 @@ nav .switch .selected {
   }
 }
 @media (min-width: 600px) {
+  nav {
+    padding-block: 2rem;
+  }
   nav .center .links {
     gap: 1rem;
   }
