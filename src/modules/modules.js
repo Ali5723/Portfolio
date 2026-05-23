@@ -1,9 +1,13 @@
+export const linkPrefix = location.hostname === "localhost" ? "" : "/Portfolio";
+
 export const parseLS = (key) => JSON.parse(localStorage.getItem(key));
 
 export const stringifyLS = (key, data) =>
   localStorage.setItem(key, JSON.stringify(data));
 
-export const langFile = fetch("/lang.json").then((res) => res.json());
+export const langFile = fetch(`${linkPrefix}/lang.json`).then((res) =>
+  res.json(),
+);
 
 export const getLangData = async (lang) => {
   let result = {};
