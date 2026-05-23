@@ -28,6 +28,28 @@ function handleSwitchClick($event) {
   }
 }
 
+window.addEventListener("click", (event) => {
+  const conditionsElement = event.target;
+  const conditionsElementParent = conditionsElement.parentElement
+    ? conditionsElement.parentElement
+    : conditionsElement;
+  const conditionsList = [
+    conditionsElementParent.localName,
+    conditionsElement.localName,
+    conditionsElementParent.className,
+    conditionsElement.className,
+  ];
+  const conditions =
+    !conditionsList.includes("ul") &&
+    [...document.getElementById("menu").classList].includes("selected") &&
+    !conditionsList.includes("menu") &&
+    !conditionsList.includes("menu selected");
+
+  if (!!conditions) {
+    handleMenuClick();
+  }
+});
+
 onBeforeMount(async () => {
   await getLangData(parseLS("lang")).then((data) => {
     langData.value = data.nav;
@@ -162,7 +184,7 @@ nav .center .links a:last-of-type {
   padding-block-end: 0;
 }
 nav .center .links a.router-link-active {
-  color: var(--primary);
+  color: var(--primary) !important;
   text-decoration: underline var(--text);
 }
 nav .switch {
