@@ -41,7 +41,7 @@ watch(
       <div class="cards-container">
         <div class="card">
           <IconHTML />
-          <h4>Html5</h4>
+          <h4>HTML5</h4>
           <p>
             بناء هيكلية ويب دلالية (Semantic HTML)، نظيفة، ومتوافقة بالكامل مع
             معايير الوصول العالمية (Accessibility) لضمان تجربة تصفح عادلة لجميع
@@ -183,6 +183,7 @@ section h3 {
 section p {
   color: var(--preview-text);
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 section hr {
   width: 5rem;
@@ -219,6 +220,8 @@ section .split div:last-of-type h4 {
   margin-block-start: 3rem;
   display: grid;
   gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
 }
 .cards-container .card {
   text-align: center;
@@ -227,10 +230,9 @@ section .split div:last-of-type h4 {
   border-radius: 1rem;
   padding-block-end: 2.5rem;
   transition: var(--transition);
+  max-width: 350px;
+  box-shadow: 0 0 1rem var(--secondary);
 }
-/* .cards-container .card:hover {
-  box-shadow: 0 0 5px var(--preview-text);
-} */
 .cards-container .card svg {
   width: 20rem;
 }
@@ -240,5 +242,11 @@ section .split div:last-of-type h4 {
 }
 .cards-container .card p {
   padding-inline: 1rem;
+}
+@media (min-width: 700px) {
+  .cards-container .card:hover {
+    box-shadow: 0 0 1rem var(--preview-text);
+    transform: scale(1.01);
+  }
 }
 </style>
