@@ -4,7 +4,7 @@
 
 <style scoped>
 img {
-  width: 18rem;
+  width: 16rem;
   border-radius: 3rem;
   box-shadow: 0 0 1.5rem 0rem var(--secondary);
   transition:

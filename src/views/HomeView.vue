@@ -26,11 +26,11 @@ watch(
       <MainImg />
     </section>
     <section>
-      <h4 class="greeting">{{ langData[0] }}</h4>
-      <h2 class="name">
+      <h2>{{ langData[0] }}</h2>
+      <h3>
         {{ langData[1] }}<span>{{ langData[2] }}</span>
-      </h2>
-      <h3 class="job">Front-End Developer</h3>
+      </h3>
+      <h4>Front-End Developer</h4>
     </section>
   </main>
 </template>
@@ -49,7 +49,7 @@ main section:first-of-type {
 }
 main section:last-of-type {
   display: grid;
-  gap: 1rem;
+  gap: 0.75rem;
   font-family: Sora, sans-serif;
 }
 main section:last-of-type h2,
@@ -57,24 +57,26 @@ main section:last-of-type h3,
 main section:last-of-type h4 {
   margin: 0;
 }
-:root[lang="ar"] main section:last-of-type .greeting,
-:root[lang="ar"] main section:last-of-type .name {
+:root[lang="ar"] main section:last-of-type h2,
+:root[lang="ar"] main section:last-of-type h3 {
   font-family: Mada, sans-serif;
 }
-main section:last-of-type .greeting {
+main section:last-of-type h2 {
   font-weight: 600;
-}
-main section:last-of-type .name {
   font-size: 2rem;
 }
-main section:last-of-type .name span {
+main section:last-of-type h3 {
+  font-size: 1.5rem;
+}
+main section:last-of-type h3 span {
   color: var(--primary);
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
 }
-main section:last-of-type .job {
+main section:last-of-type h4 {
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--secondary);
+  text-shadow: 0 0 0.5rem var(--secondary);
 }
 @media (min-width: 700px) {
   main {

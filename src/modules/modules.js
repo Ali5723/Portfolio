@@ -18,3 +18,11 @@ export const getLangData = async (lang) => {
   await langFile.then((res) => res[lang]).then((data) => (result = data));
   return result;
 };
+
+// export const resolveLangArr = (data) => {
+//   let result = [];
+//   data.forEach((item) =>
+//     item[1] ? result.push(`<span>${item[0]}</span>`) : result.push(item[0]),
+//   );
+//   return result;
+// };

@@ -111,6 +111,9 @@ nav .logo::first-letter {
   font-style: normal;
   font-size: 2.25rem;
 }
+/* :root[lang="ar"] nav {
+  flex-direction: row-reverse;
+} */
 :root[lang="ar"] nav .center {
   direction: rtl;
 }
@@ -259,6 +262,14 @@ nav .switch .selected {
   }
   nav .center .links a {
     font-size: 1.1rem;
+  }
+}
+@media (min-width: 900px) {
+  nav .center .links {
+    gap: 2rem;
+  }
+  nav .center .links a {
+    font-size: 1.2rem;
   }
 }
 </style>
