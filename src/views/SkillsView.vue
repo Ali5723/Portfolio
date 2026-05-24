@@ -28,90 +28,69 @@ watch(
 <template>
   <main>
     <section class="center">
-      <h1>استراتيجية <span class="highlight">المهارات</span> التقنية</h1>
-      <p>Front-End Mystery: هندسة الواجهات و التميز الرقمي</p>
+      <h1>
+        {{ langData[0] }}<span class="highlight">{{ langData[1] }}</span
+        >{{ langData[2] }}
+      </h1>
+      <p>{{ langData[3] }}</p>
     </section>
     <section class="center">
       <hr />
-      <h2>الركائز الأساسية</h2>
-      <p>القاعدة الصلبة لكل مشروع ويب ناجح</p>
+      <h2>{{ langData[4] }}</h2>
+      <p>{{ langData[5] }}</p>
     </section>
     <section>
-      <h3>الأساس التقني (Core Stack)</h3>
+      <h3>{{ langData[6] }}</h3>
       <div class="cards-container">
         <div class="card">
           <IconHTML />
           <h4>HTML5</h4>
-          <p>
-            بناء هيكلية ويب دلالية (Semantic HTML)، نظيفة، ومتوافقة بالكامل مع
-            معايير الوصول العالمية (Accessibility) لضمان تجربة تصفح عادلة لجميع
-            المستخدمين.
-          </p>
+          <p>{{ langData[7] }}</p>
         </div>
         <div class="card">
           <IconCSS />
           <h4>CSS3</h4>
-          <p>
-            تصاميم متجاوبة بلمسات Pixel-Perfect مع أنميشن سلس يثري تجربة
-            المستخدم.
-          </p>
+          <p>{{ langData[8] }}</p>
         </div>
         <div class="card">
           <IconJS />
           <h4>JavaScript</h4>
-          <p>
-            البرمجة التفاعلية الحديثة (ES6+) لضمان أداء ديناميكي و منطق برمجي
-            قوي.
-          </p>
+          <p>{{ langData[9] }}</p>
         </div>
       </div>
     </section>
     <section>
-      <h3>أطر العمل (Frameworks)</h3>
+      <h3>{{ langData[10] }}</h3>
       <div class="cards-container">
         <div class="card">
           <IconVite />
           <h4>Vite</h4>
-          <p>
-            اعتماد أداة البناء الأحدث لتسريع بيئة التطوير اللحظية، وتحسين كفاءة
-            الملفات النهائية (Production Bundling) لضمان سرعة تحميل فائقة
-            للموقع.
-          </p>
+          <p>{{ langData[11] }}</p>
         </div>
         <div class="card">
           <IconVue />
           <h4>VueJS</h4>
-          <p>
-            تطوير تطبيقات الصفحة الواحدة (SPAs) تفاعلية وديناميكية، باستخدام
-            بنية المكونات القابلة لإعادة الاستخدام (Reusable Components) لإدارة
-            منطق الواجهات بسلاسة.
-          </p>
+          <p>{{ langData[12] }}</p>
         </div>
       </div>
     </section>
     <section>
-      <h3>بيئة العمل والأدوات</h3>
+      <h3>{{ langData[13] }}</h3>
       <div class="cards-container">
         <div class="card">
           <IconGit />
           <h4>Version Control</h4>
-          <p>
-            إدارة الكود باحترافية عبر Git و GitHub لضمان استمرارية العمل و
-            توثيقه.
-          </p>
+          <p>{{ langData[14] }}</p>
         </div>
         <div class="card">
           <IconConsole />
           <h4>DevTools</h4>
-          <p>
-            استخدام أدوات المطور المتقدمة لتصحيح الأخطاء وتحسين الأداء اللحظي
-            للموقع.
-          </p>
+          <p>{{ langData[15] }}</p>
         </div>
       </div>
     </section>
     <section>
-      <h3>فلسفة الدقة الرقمية</h3>
+      <h3>{{ langData[16] }}</h3>
       <div class="split">
         <div>
           <h4>100%</h4>
@@ -119,11 +98,8 @@ watch(
         </div>
         <div>
           <hr />
-          <h4>الالتزام بالجودة</h4>
-          <p>
-            كل بكسل له مكانه, وكل تفاعل مدروس بعناية. نحن نؤمن أن الفرق بين
-            التصميم الجيد والتصميم العظيم يكمن في الاهتمام بأدق التفاصيل.
-          </p>
+          <h4>{{ langData[17] }}</h4>
+          <p>{{ langData[18] }}</p>
         </div>
       </div>
     </section>
@@ -229,7 +205,7 @@ section .split div:last-of-type h4 {
   border: 1px solid var(--preview-text);
   border-radius: 1rem;
   padding-block-end: 2.5rem;
-  transition: var(--transition);
+  transition: 250ms linear;
   max-width: 350px;
   box-shadow: 0 0 1rem var(--secondary);
 }
@@ -246,7 +222,7 @@ section .split div:last-of-type h4 {
 @media (min-width: 700px) {
   .cards-container .card:hover {
     box-shadow: 0 0 1rem var(--preview-text);
-    transform: scale(1.01);
+    transform: scale(1.011);
   }
 }
 </style>

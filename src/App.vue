@@ -93,12 +93,26 @@ onMounted(() => {
 </template>
 
 <style scoped>
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 2;
+  padding-block: 1rem;
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-block: 1rem;
   direction: ltr;
+
+  /* background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease; */
 }
 nav .logo {
   margin: 0;
@@ -249,9 +263,9 @@ nav .switch .selected {
   }
 }
 @media (min-width: 600px) {
-  nav {
+  /* header {
     padding-block: 2rem;
-  }
+  } */
   nav .center .links {
     gap: 1rem;
   }
