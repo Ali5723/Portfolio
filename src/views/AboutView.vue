@@ -44,13 +44,17 @@ watch(
 main {
   margin-block-start: 2rem;
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 0.5rem;
 }
 main img {
   opacity: 0.8;
+  display: none;
 }
 main ul {
   margin: 0;
@@ -64,6 +68,14 @@ main ul li span.highlight {
 @media (min-width: 700px) {
   main {
     flex-direction: row-reverse;
+  }
+  main img {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    gap: 5rem;
   }
 }
 </style>
