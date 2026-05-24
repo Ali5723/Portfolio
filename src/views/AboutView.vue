@@ -62,9 +62,6 @@ main ul {
   gap: 1rem;
   line-height: 1.5;
 }
-main ul li span.highlight {
-  color: var(--secondary);
-}
 @media (min-width: 700px) {
   main {
     flex-direction: row-reverse;

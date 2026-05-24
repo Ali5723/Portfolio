@@ -73,7 +73,8 @@
   --primary: #ff3b3b;
   --secondary: #ff6b35;
   --text: #f1f1f1;
-  --cards: #121212;
+  --cards: #111111;
+  --preview-text: #7a828b;
   --transition: 300ms linear;
 }
 
@@ -123,3 +124,10 @@ body {
   }
 }
 /* End App */
+
+/* Start Components */
+span.highlight {
+  color: var(--secondary);
+}
+
+/* End Components */
