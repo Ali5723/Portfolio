@@ -192,37 +192,4 @@ section .split div:last-of-type h4 {
   font-size: 2rem;
   margin-block-end: 1rem;
 }
-.cards-container {
-  margin-block-start: 3rem;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  justify-items: center;
-}
-.cards-container .card {
-  text-align: center;
-  background-color: var(--cards);
-  border: 1px solid var(--preview-text);
-  border-radius: 1rem;
-  padding-block-end: 2.5rem;
-  transition: 250ms linear;
-  max-width: 350px;
-  box-shadow: 0 0 1rem var(--secondary);
-}
-.cards-container .card svg {
-  width: 20rem;
-}
-.cards-container .card h4 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.cards-container .card p {
-  padding-inline: 1rem;
-}
-@media (min-width: 700px) {
-  .cards-container .card:hover {
-    box-shadow: 0 0 1rem var(--preview-text);
-    transform: scale(1.011);
-  }
-}
 </style>
