@@ -7,7 +7,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig(({ command, mode }) => {
-  const isProd = mode === "production";
+  //const isProd = mode === "production";
 
   return {
     plugins: [vue(), vueJsx(), vueDevTools()],
@@ -21,6 +21,7 @@ export default defineConfig(({ command, mode }) => {
       host: true,
       port: 5173,
     },
-    base: isProd ? "/Portfolio/" : "/",
+    //base: isProd ? "/Portfolio/" : "/",
+    base: "/"
   };
 });
