@@ -1,8 +1,9 @@
-export const linkPrefix = ["localhost", "192.168.1.4"].includes(
-  location.hostname,
-)
-  ? ""
-  : "/Portfolio";
+// export const linkPrefix = ["localhost", "192.168.1.4"].includes(
+//   location.hostname,
+// )
+//   ? ""
+//   : "/Portfolio";
+export const linkPrefix = ""
 
 export const parseLS = (key) => JSON.parse(localStorage.getItem(key));
 
