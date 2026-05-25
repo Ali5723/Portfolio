@@ -96,7 +96,11 @@ function removeModal() {
             >Repo</a
           >
           <a
-            :href="`https://ali5723.github.io/${myProjectsLinks[index]}`"
+            :href="
+              index !== 0
+                ? `https://ali5723.github.io/${myProjectsLinks[index]}`
+                : 'https://alimoh-dev-portfolio.vercel.app/'
+            "
             target="_blank"
             rel="noopener noreferrer"
             >Live Demo</a
@@ -197,7 +201,7 @@ main {
   width: 100%;
   height: 100vh;
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: var(--transition);
   /* z-index: 5; */
 }

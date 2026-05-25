@@ -100,7 +100,6 @@ header {
   /* width: 100%; */
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   z-index: 2;
   padding-block: 1rem;
 }
