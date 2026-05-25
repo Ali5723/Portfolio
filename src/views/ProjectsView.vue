@@ -102,6 +102,11 @@ function removeModal() {
             >Live Demo</a
           >
         </div>
+        <!-- <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul> -->
       </div>
     </div>
     <div class="modal hidden" @click="removeModal">
@@ -154,6 +159,10 @@ main {
   row-gap: 3rem;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
+.cards-container .card {
+  /* padding-block-end: 0.5rem; */
+  padding-block-end: 2rem;
+}
 .cards-container .card h2 {
   text-transform: capitalize;
   font-family: Sora, sans-serif;
@@ -164,12 +173,23 @@ main {
   justify-content: center;
   gap: 3rem;
   margin-block-start: 2rem;
+  direction: ltr;
 }
 .cards-container .card .split a {
   text-decoration: none;
   color: var(--primary);
   font-family: Sora, sans-serif;
 }
+/* .cards-container .card ul {
+  list-style: none;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+.cards-container .card ul li {
+} */
 .modal {
   position: fixed;
   top: 0;
@@ -194,5 +214,6 @@ main {
   border: 2px solid var(--primary);
   box-shadow: 0 0 1.25rem var(--primary);
   border-radius: 1rem;
+  max-width: 800px;
 }
 </style>
