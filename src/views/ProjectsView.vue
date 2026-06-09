@@ -18,6 +18,7 @@ watch(
 );
 
 const myProjectsNames = [
+  "Luvia Education Platform",
   "Portfolio",
   "Todo app",
   "Weather app",
@@ -37,6 +38,7 @@ const myProjectsNames = [
 // https://github.com/Ali5723/  Portfolio
 // https://ali5723.github.io/   Portfolio
 const myProjectsLinks = [
+  "",
   "Portfolio",
   "Frontend-Mentor-Todo-app",
   "Frontend-Mentor-Weather-app",
@@ -93,13 +95,25 @@ function removeModal() {
             :href="`https://github.com/Ali5723/${myProjectsLinks[index]}`"
             target="_blank"
             rel="noopener noreferrer"
+            v-if="myProjectsLinks[index]"
+            >Repo</a
+          >
+          <a
+            href="https://github.com/Ali5723/"
+            target="_blank"
+            rel="noopener noreferrer"
+            @click.prevent=""
+            class="disabled"
+            v-else
             >Repo</a
           >
           <a
             :href="
-              index !== 0
-                ? `https://ali5723.github.io/${myProjectsLinks[index]}`
-                : 'https://alimoh-dev-portfolio.vercel.app/'
+              index === 0
+                ? 'https://luvia-one.vercel.app/'
+                : index === 1
+                  ? 'https://alimoh-dev-portfolio.vercel.app/'
+                  : `https://ali5723.github.io/${myProjectsLinks[index]}`
             "
             target="_blank"
             rel="noopener noreferrer"
@@ -183,6 +197,9 @@ main {
   text-decoration: none;
   color: var(--primary);
   font-family: Sora, sans-serif;
+}
+.cards-container .card .split a.disabled {
+  opacity: 0.5;
 }
 /* .cards-container .card ul {
   list-style: none;

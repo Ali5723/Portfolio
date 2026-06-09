@@ -62,6 +62,7 @@
       "Submit"
     ],
     "projects": [
+      "A professional educational platform utilizing clean architecture, where I developed core application logic and secure token systems, successfully serving over 100 active users.",
       "A minimalist, high-performance professional portfolio website built using a clean component-based architecture, featuring dynamic localization, fixed navigation system, and responsive layout.",
       "A dynamic Todo application utilizing advanced state management and local storage persistence, featuring full CRUD functionality, custom theme switching, and interactive task filtering.",
       "A real-time weather dashboard that integrates external REST APIs to fetch precise geographical weather forecasts, showcasing async programming and clean data binding.",
@@ -136,6 +137,7 @@
       "إرسال الرسالة"
     ],
     "projects": [
+      "منصة تعليمية احترافية تعتمد على بنية برمجية نظيفة، حيث قمت بتطوير منطق التطبيق الأساسي وأنظمة التوكنز الآمنة، لتخدم بنجاح أكثر من 100 مستخدم نشط.",
       "موقع معرض أعمال شخصي واحترافي، مبني بهيكل بسيط ومتقدم يعتمد على المكونات (Component-Based)، ويتميز بنظام تعريب ديناميكي، شريط تنقل ثابت، وتوزيع عناصر متجاوب بالكامل.",
       "تطبيق إدارة مهام (Todo) تفاعلي يعتمد على إدارة متقدمة لحالة التطبيق (State Management) وحفظ البيانات محلياً، ويتميز بدعم كامل لعمليات (CRUD)، وتغيير القوالب مخصصة، وتصفية المهام التفاعلية.",
       "لوحة تحكم ذكية للطقس لحظية تقوم بالربط مع واجهات برمجية خارجية (REST APIs) لجلب توقعات جغرافية دقيقة، تستعرض البرمجة غير المتزامنة (Async) والربط النظيف للبيانات.",
