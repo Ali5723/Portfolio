@@ -11,7 +11,7 @@ useHead({
         name: "Ali Amin",
         jobTitle: "Front-End Developer",
         url: "https://alidevamin.vercel.app",
-        image: "https://alidevamin.vercel.app/images/og-image.webp",
+        image: "https://alidevamin.vercel.app/images/og-image.png",
         sameAs: [
           "https://github.com/Ali5723",
           "https://linkedin.com/in/ali-mohamed-477a83417",
